@@ -1,0 +1,78 @@
+#ifndef XPARAMETERS_H   /* prevent circular inclusions */
+#define XPARAMETERS_H   /* by using protection macros */
+
+#define XPAR_XGPIO_NUM_INSTANCES 2
+
+/* Definitions for peripheral GPIO_LED */
+#define XPAR_GPIO_LED_COMPATIBLE xlnx,axi-gpio-2.0
+#define XPAR_GPIO_LED_BASEADDR 0x40000000
+#define XPAR_GPIO_LED_HIGHADDR 0x4000ffff
+#define XPAR_GPIO_LED_INTERRUPT_PRESENT 0x0
+#define XPAR_GPIO_LED_IS_DUAL 0x0
+#define XPAR_GPIO_LED_GPIO_WIDTH 0x10
+
+/* Canonical definitions for peripheral GPIO_LED */
+#define XPAR_XGPIO_0_BASEADDR 0x40000000
+#define XPAR_XGPIO_0_HIGHADDR 0x4000ffff
+#define XPAR_XGPIO_0_COMPATIBLE xlnx,axi-gpio-2.0
+#define XPAR_XGPIO_0_GPIO_WIDTH 0x10
+#define XPAR_XGPIO_0_INTERRUPT_PRESENT 0x0
+#define XPAR_XGPIO_0_IS_DUAL 0x0
+
+/* Definitions for peripheral GPIO_SW */
+#define XPAR_GPIO_SW_COMPATIBLE xlnx,axi-gpio-2.0
+#define XPAR_GPIO_SW_BASEADDR 0x40010000
+#define XPAR_GPIO_SW_HIGHADDR 0x4001ffff
+#define XPAR_GPIO_SW_INTERRUPT_PRESENT 0x0
+#define XPAR_GPIO_SW_IS_DUAL 0x0
+#define XPAR_GPIO_SW_GPIO_WIDTH 0x10
+
+/* Canonical definitions for peripheral GPIO_SW */
+#define XPAR_XGPIO_1_BASEADDR 0x40010000
+#define XPAR_XGPIO_1_HIGHADDR 0x4001ffff
+#define XPAR_XGPIO_1_COMPATIBLE xlnx,axi-gpio-2.0
+#define XPAR_XGPIO_1_GPIO_WIDTH 0x10
+#define XPAR_XGPIO_1_INTERRUPT_PRESENT 0x0
+#define XPAR_XGPIO_1_IS_DUAL 0x0
+
+#define XPAR_XUARTLITE_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_UARTLITE_0 */
+#define XPAR_AXI_UARTLITE_0_COMPATIBLE xlnx,axi-uartlite-2.0
+#define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+#define XPAR_AXI_UARTLITE_0_HIGHADDR 0x4060ffff
+#define XPAR_AXI_UARTLITE_0_BAUDRATE 0x2580
+#define XPAR_AXI_UARTLITE_0_USE_PARITY 0x0
+#define XPAR_AXI_UARTLITE_0_ODD_PARITY 0x0
+#define XPAR_AXI_UARTLITE_0_DATA_BITS 0x8
+
+/* Canonical definitions for peripheral AXI_UARTLITE_0 */
+#define XPAR_XUARTLITE_0_BASEADDR 0x40600000
+#define XPAR_XUARTLITE_0_HIGHADDR 0x4060ffff
+#define XPAR_XUARTLITE_0_BAUDRATE 0x2580
+#define XPAR_XUARTLITE_0_COMPATIBLE xlnx,axi-uartlite-2.0
+#define XPAR_XUARTLITE_0_DATA_BITS 0x8
+#define XPAR_XUARTLITE_0_ODD_PARITY 0x0
+#define XPAR_XUARTLITE_0_USE_PARITY 0x0
+
+/*  BOARD definition */
+#define XPS_BOARD_NEXYS-A7-100T
+
+#define XPAR_MIG_0_BASEADDRESS 0x80000000
+#define XPAR_MIG_0_HIGHADDRESS 0x88000000
+#define XPAR_LMB_BRAM_0_BASEADDRESS 0x0
+#define XPAR_LMB_BRAM_0_HIGHADDRESS 0x8000
+#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 100000000
+
+#define XPAR_MICROBLAZE_ADDR_SIZE 32
+
+#define STDOUT_BASEADDRESS 0x40600000
+#define STDIN_BASEADDRESS 0x40600000
+
+/* Number of SLRs */
+#define NUMBER_OF_SLRS 0x1
+
+/* Device ID */
+#define XPAR_DEVICE_ID "7a100t"
+
+#endif  /* end of protection macro */

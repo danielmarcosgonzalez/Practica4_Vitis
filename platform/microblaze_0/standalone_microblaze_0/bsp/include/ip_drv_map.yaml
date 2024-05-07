@@ -1,0 +1,9 @@
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+gpio_led:
+- axi_gpio
+- gpio
+gpio_sw:
+- axi_gpio
+- gpio
